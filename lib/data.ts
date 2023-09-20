@@ -90,6 +90,7 @@ export const skillsData = [
 	'JavaScript',
 	'TypeScript',
 	'React',
+	'Firebase',
 	'Next.js',
 	'Node.js',
 	'Git',
@@ -101,7 +102,7 @@ export const skillsData = [
 	'Apollo',
 	'Express',
 	'PostgreSQL',
-	'Python',
-	'Django',
+	'Google Cloud',
+	'AWS',
 	'Framer Motion'
 ] as const;
