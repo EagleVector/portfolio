@@ -8,9 +8,15 @@ import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi'
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
-	const { ref } = useSectionInView("Home");
+	const { ref } = useSectionInView("Home", 0.5);
+	const {
+		setActiveSection,
+		setTimeOfLastClick
+	} = useActiveSectionContext();
+
 
 	return (
 		<section ref={ref} id='home' className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
@@ -73,12 +79,16 @@ export default function Intro() {
         <Link 
           href='#contact'
           className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-3 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-102 transition'
+					onClick={() => {
+						setActiveSection("Contact");
+						setTimeOfLastClick(Date.now());
+					}}
           >
             Contact me here <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
         </Link>
 
         <a 
-          className='group bg-white px-7 py-3 flex items-center gap-3 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-102 transition cursor-pointer border border-black/10' 
+          className='group bg-white px-7 py-3 flex items-center gap-3 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-102 transition cursor-pointer borderBlack' 
           href='/CV.pdf' 
           download
         >
@@ -86,7 +96,7 @@ export default function Intro() {
         </a>
 
         <a 
-          className='bg-white p-4 text-gray-700 flex items-center gap-3 rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition border border-black/10'
+          className='bg-white p-4 text-gray-700 flex items-center gap-3 rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition borderBlack'
           href='https://www.linkedin.com/in/subham-kumar-0b79ba139/'
           target='_blank'
         >
@@ -94,7 +104,7 @@ export default function Intro() {
         </a>
 
         <a 
-          className='bg-white p-4 text-gray-700 flex items-center gap-3 text-[1.35rem] rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition border border-black/10'
+          className='bg-white p-4 text-gray-700 flex items-center gap-3 text-[1.35rem] rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition borderBlack'
           href='https://github.com/EagleVector'
           target='_blank'
         >
