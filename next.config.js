@@ -5,8 +5,11 @@ const nextConfig = {
 			{
 				protocol: 'https',
 				hostname: 'avatars.githubusercontent.com'
-			}
-		]
+			},
+		],
+	},
+	experimental: {
+		serverActions: true
 	}
 };
 
