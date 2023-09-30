@@ -96,7 +96,7 @@ export const projectsData = [
 		title: 'twitter-clone',
 		description:
 			'Server-side static page rendering for fast page reload, improved performance and better SEO. Backend built on graphQL server with Prisma ORM.',
-		tags: ['NextJS', 'Typescript', 'GraphQL', 'Prisma', 'AWS', 'Redis'],
+		tags: ['NextJS', 'Typescript', 'GraphQL', 'Prisma', 'AWS', 'Redis', 'RTKQ'],
 		imageUrl: twitterImg
 	},
 	{

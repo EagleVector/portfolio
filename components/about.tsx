@@ -22,10 +22,9 @@ export default function About() {
         After graduating with a degree in{" "}
         <span className="font-medium">Engineering</span>, I decided to pursue my
         passion for programming. I got myself enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development and cloud technologies</span>.{" "}
+        <span className="font-medium">computer fundamentals, software design, web development and cloud technologies</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="font-medium">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
+        problem-solving aspect. I <span className="font-medium">love</span> to figure out solution to the problem. My core stack
         is{" "}
         <span className="font-medium">
           React, Next.js, Node.js, MongoDB and AWS

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi'
-import { FaGithubSquare } from 'react-icons/fa';
+import { FaGithubSquare, FaTwitterSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
 
@@ -62,10 +62,10 @@ export default function Intro() {
 				animate={{ opacity: 1, y: 0 }}
 			>
 				<span className="font-bold">Hello, I am Subham.</span> I am a{' '}
-				<span className="font-bold">full-stack developer</span> with{' '}
+				<span className="font-bold">full-stack software developer</span> with{' '}
 				<span className="font-bold">1 year</span> of experience. I enjoy
-				building <span className="italic">web applications with {' '}</span>
-				<span className="underline">React(Next.js)</span>
+				building <span className="italic">end to end web applications and software as service with {' '}</span>
+				<span className="underline">modern technologies</span>
 			</motion.h1>
 
       <motion.div 
@@ -109,6 +109,14 @@ export default function Intro() {
           target='_blank'
         >
          <FaGithubSquare />
+        </a>
+
+				<a 
+          className='bg-white p-4 text-gray-700 flex items-center gap-3 text-[1.35rem] rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60'
+          href='https://twitter.com/Eagle_Vector'
+          target='_blank'
+        >
+         <FaTwitterSquare />
         </a>
       </motion.div>
 		</section>
