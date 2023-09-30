@@ -2,9 +2,12 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-import corpcommentImg from '@/public/corpcomment.png';
-import rmtdevImg from '@/public/rmtdev.png';
-import wordanalyticsImg from '@/public/wordanalytics.png';
+import chatpdfImg from '@/public/chatpdf.png';
+import devcamperImg from '@/public/devcamper.png';
+import proshopImg from '@/public/proshop.png';
+import twitterImg from '@/public/twitter.png';
+import videotranscodingImg from '@/public/video_processing_service.png';
+import tracalorieImg from '@/public/tracalorie.png';
 
 export const links = [
 	{
@@ -35,52 +38,73 @@ export const links = [
 
 export const experiencesData = [
 	{
-		title: 'Graduated bootcamp',
-		location: 'Miami, FL',
+		title: 'Bachelor in Engineering',
+		location: 'Bengaluru',
 		description:
-			'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
+			'I graduated in Mechanical Engineering after 4 years of studying. I immediately found a job as a mentor.',
 		icon: React.createElement(LuGraduationCap),
 		date: '2019'
 	},
 	{
-		title: 'Front-End Developer',
-		location: 'Orlando, FL',
+		title: 'Coding Bootcamp',
+		location: 'Bengaluru',
 		description:
-			'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
+			'I studied DSA, System Design, Software Development and Cloud Technologies. Here I upskilled myself to build full stack web applications end to end',
 		icon: React.createElement(CgWorkAlt),
-		date: '2019 - 2021'
+		date: '2022'
 	},
 	{
 		title: 'Full-Stack Developer',
-		location: 'Houston, TX',
+		location: 'Remote',
 		description:
-			"I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+			"I am now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I build SAAS and provide software solutions.",
 		icon: React.createElement(FaReact),
-		date: '2021 - present'
+		date: '2023'
 	}
 ] as const;
 
 export const projectsData = [
 	{
-		title: 'CorpComment',
+		title: 'chatPDF',
 		description:
-			'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-		tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-		imageUrl: corpcommentImg
+			'AI RAG SaaS for chatting with PDF files.',
+		tags: ['Next 13', 'Pinecone DB', 'Drizzle', 'OpenAI API', 'Stripe', 'Vercel AI'],
+		imageUrl: chatpdfImg
 	},
 	{
-		title: 'rmtDev',
+		title: 'Video Transcoder',
 		description:
-			'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-		tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-		imageUrl: rmtdevImg
+			'Video Processing Service to transcode video into 360p. Containerized serverless backend architecture on cloud.',
+		tags: [ 'NextJS 13', 'FFmpeg', 'Typescript', 'Docker', 'GCP'],
+		imageUrl: videotranscodingImg
 	},
 	{
-		title: 'Word Analytics',
+		title: 'ProShop',
 		description:
-			'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-		tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-		imageUrl: wordanalyticsImg
+			'Modern e-commerce shopping platform on MVC pattern. Admin Dashboard and 4-step checkout process with PayPal integration.',
+		tags: ['Javascript', 'React', 'Redux', 'MongoDB', 'JWT', 'PayPal'],
+		imageUrl: proshopImg
+	},
+	{
+		title: 'DevCamper',
+		description:
+			'Backend RESTful API For Bootcamp App. Advanced Mongoose Queries, search filtering by distance, reset password and API Security. ',
+		tags: ['JS', 'MapQuestAPI', 'MongoDB', 'Mailtrap', 'Docgen'],
+		imageUrl: devcamperImg
+	},
+	{
+		title: 'twitter-clone',
+		description:
+			'Server-side static page rendering for fast page reload, improved performance and better SEO. Backend built on graphQL server with Prisma ORM.',
+		tags: ['NextJS', 'Typescript', 'GraphQL', 'Prisma', 'AWS', 'Redis'],
+		imageUrl: twitterImg
+	},
+	{
+		title: 'TraCalorie',
+		description:
+			'Calorie Tracker Application built on pure vanilla javascript to keep track of diet and workout',
+		tags: ['HTML', 'CSS', 'Vanilla JS', 'DOM', 'Webpack'],
+		imageUrl: tracalorieImg
 	}
 ] as const;
 
